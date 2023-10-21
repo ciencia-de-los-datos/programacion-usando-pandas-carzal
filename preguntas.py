@@ -7,14 +7,20 @@ Este archivo contiene las preguntas que se van a realizar en el laboratorio.
 Utilice los archivos `tbl0.tsv`, `tbl1.tsv` y `tbl2.tsv`, para resolver las preguntas.
 
 """
+
 import pandas as pd
 
-tbl0 = pd.read_csv("tbl0.tsv", sep="\t")
-tbl1 = pd.read_csv("tbl1.tsv", sep="\t")
-tbl2 = pd.read_csv("tbl2.tsv", sep="\t")
+tbl0 = pd.read_csv(r"C:\Users\ASUS\Desktop\GitHub\trabajo 2\programacion-usando-pandas-carzal\tbl0.tsv", sep="\t")
+tbl1 = pd.read_csv(r"C:\Users\ASUS\Desktop\GitHub\trabajo 2\programacion-usando-pandas-carzal\tbl1.tsv", sep="\t")
+tbl2 = pd.read_csv(r"C:\Users\ASUS\Desktop\GitHub\trabajo 2\programacion-usando-pandas-carzal\tbl2.tsv", sep="\t")
 
 
 def pregunta_01():
+    
+    x = tbl0.shape
+    return x[0]
+
+    
     """
     ¿Cuál es la cantidad de filas en la tabla `tbl0.tsv`?
 
@@ -22,10 +28,14 @@ def pregunta_01():
     40
 
     """
-    return
+
 
 
 def pregunta_02():
+    
+    x = tbl0.shape
+    return x[1]
+    
     """
     ¿Cuál es la cantidad de columnas en la tabla `tbl0.tsv`?
 
@@ -33,10 +43,14 @@ def pregunta_02():
     4
 
     """
-    return
+    
 
 
 def pregunta_03():
+    
+    x = tbl0._c1.value_counts().sort_index()
+    return x
+    
     """
     ¿Cuál es la cantidad de registros por cada letra de la columna _c1 del archivo
     `tbl0.tsv`?
