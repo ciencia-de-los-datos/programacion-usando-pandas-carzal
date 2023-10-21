@@ -10,9 +10,9 @@ Utilice los archivos `tbl0.tsv`, `tbl1.tsv` y `tbl2.tsv`, para resolver las preg
 
 import pandas as pd
 
-tbl0 = pd.read_csv(r"C:\Users\ASUS\Desktop\GitHub\trabajo 2\programacion-usando-pandas-carzal\tbl0.tsv", sep="\t")
-tbl1 = pd.read_csv(r"C:\Users\ASUS\Desktop\GitHub\trabajo 2\programacion-usando-pandas-carzal\tbl1.tsv", sep="\t")
-tbl2 = pd.read_csv(r"C:\Users\ASUS\Desktop\GitHub\trabajo 2\programacion-usando-pandas-carzal\tbl2.tsv", sep="\t")
+tbl0 = pd.read_csv("tbl0.tsv", sep="\t")
+tbl1 = pd.read_csv("tbl1.tsv", sep="\t")
+tbl2 = pd.read_csv("tbl2.tsv", sep="\t")
 
 
 def pregunta_01():
